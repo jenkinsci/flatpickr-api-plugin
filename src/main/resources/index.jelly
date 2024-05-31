@@ -1,0 +1,5 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Provides <a href="https://flatpickr.js.org/">flatpickr.js</a> for Jenkins plugins.
+    flatpickr.js is a lightweight javascript library for selecting dates and times.
+</div>

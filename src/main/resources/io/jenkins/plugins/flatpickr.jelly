@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<!--
+Use it like <st:adjunct includes="io.jenkins.plugins.flatpickr"/>
+-->
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
+  <j:new var="h" className="hudson.Functions" />
+  ${h.initPageVariables(context)}
+
+  <link type="text/css" rel="stylesheet" href="${resURL}/plugin/flatpickr-api/css/flatpickr.css"/>
+  <script type="text/javascript" src="${resURL}/plugin/flatpickr-api/js/flatpickr.min.js"/>
+</j:jelly>
+
