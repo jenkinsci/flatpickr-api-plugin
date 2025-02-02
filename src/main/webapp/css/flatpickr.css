@@ -3,6 +3,7 @@
   --flatpickr-color-90: color-mix(in srgb, var(--white) 90%, var(--black));
   --flatpickr-color-80: color-mix(in srgb, var(--white) 80%, var(--black));
 }
+
 :root[data-theme=dark] {
   --flatpickr-color: color-mix(in srgb, var(--black) 95%, var(--white));
   --flatpickr-color-90: color-mix(in srgb, var(--black) 90%, var(--white));
@@ -763,7 +764,7 @@ span.flatpickr-weekday {
 .flatpickr-time .flatpickr-am-pm:hover,
 .flatpickr-time input:focus,
 .flatpickr-time .flatpickr-am-pm:focus{
-  background: var(-hover-color-90);
+  background: var(--flatpickr-color-90);
 }
 
 .flatpickr-input[readonly] {
