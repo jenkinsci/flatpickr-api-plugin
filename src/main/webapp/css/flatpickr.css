@@ -1,13 +1,7 @@
 :root {
-  --flatpickr-color: color-mix(in srgb, var(--white) 95%, var(--black));
-  --flatpickr-color-90: color-mix(in srgb, var(--white) 90%, var(--black));
-  --flatpickr-color-80: color-mix(in srgb, var(--white) 80%, var(--black));
-}
-
-:root[data-theme=dark] {
-  --flatpickr-color: color-mix(in srgb, var(--black) 95%, var(--white));
-  --flatpickr-color-90: color-mix(in srgb, var(--black) 90%, var(--white));
-  --flatpickr-color-80: color-mix(in srgb, var(--black) 80%, var(--white));
+  --flatpickr-color: color-mix(in srgb, var(--background) 95%, var(--text-color));
+  --flatpickr-color-90: color-mix(in srgb, var(--background) 90%, var(--text-color));
+  --flatpickr-color-80: color-mix(in srgb, var(--background) 80%, var(--text-color));
 }
 
 .flatpickr-calendar {
@@ -764,7 +758,7 @@ span.flatpickr-weekday {
 .flatpickr-time .flatpickr-am-pm:hover,
 .flatpickr-time input:focus,
 .flatpickr-time .flatpickr-am-pm:focus{
-  background: var(--flatpickr-color-90);
+  background: var(--flatpickr-color);
 }
 
 .flatpickr-input[readonly] {
